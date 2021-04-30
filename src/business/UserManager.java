@@ -11,7 +11,7 @@ import models.User;
 
 public class UserManager {	
 	
-	public void addNewUser(User user) {
+	public void add(User user) {
 		System.out.println(user.getName()+ " isminde yeni bir kullanýcý eklendi.");
 	}
 	

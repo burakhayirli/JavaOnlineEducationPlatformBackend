@@ -69,13 +69,13 @@ public class Main {
 		courseLessonItem4.setTitle("Değerlendirme");
 		
 		InstructorManager instructorManager = new InstructorManager();
-		instructorManager.addNewUser(instructor1);
+		instructorManager.add(instructor1);
 		instructorManager.addCourse(course1);
 		instructorManager.addCourse(course2);
 		instructorManager.addCourse(course3);
 		System.out.println("********************************************"); 
 		StudentManager studentManager = new StudentManager();
-		studentManager.addNewUser(student);
+		studentManager.add(student);
 		studentManager.registerCourse(course1);
 		studentManager.registerCourse(course2);
 		studentManager.registerCourse(course3);

@@ -14,7 +14,7 @@ import models.User;
 public class InstructorManager extends UserManager{
 
 	@Override
-	public void addNewUser(User user) {
+	public void add(User user) {
 		System.out.println(user.getName()+" "+user.getSurname()+ " isminde yeni bir eðitmen eklendi.");
 	}
 	
