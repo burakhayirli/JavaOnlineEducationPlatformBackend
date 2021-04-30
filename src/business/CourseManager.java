@@ -4,7 +4,7 @@
  * Yazýlým Geliþtirici Yetiþtirme Kampý (JAVA + REACT)
  * 28 Nis 2021
  */
-package app;
+package business;
 
 import models.Course;
 import models.User;
