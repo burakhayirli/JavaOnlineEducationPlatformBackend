@@ -5,7 +5,7 @@
  * 28 Nis 2021
  */
 
-package models;
+package ders1_2_3_birlestirilmis_odevler;
 
 import java.sql.Date;
 

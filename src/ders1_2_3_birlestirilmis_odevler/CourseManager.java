@@ -4,10 +4,7 @@
  * Yazýlým Geliþtirici Yetiþtirme Kampý (JAVA + REACT)
  * 28 Nis 2021
  */
-package business;
-
-import models.Course;
-import models.User;
+package ders1_2_3_birlestirilmis_odevler;
 
 public class CourseManager {
 

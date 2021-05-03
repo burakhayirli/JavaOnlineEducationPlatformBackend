@@ -5,30 +5,35 @@
  * 28 Nis 2021
  */
 
-package models;
+package ders1_2_3_birlestirilmis_odevler;
 
 import java.sql.Date;
 
-public class Category {
-
+public class Course {
+	
 	private int id;
+	private int instructorId;
 	private String name;
+	private String image;
 	private boolean active;
 	private Date createdDate;
 	private Date updatedDate;
-
-	public Category() {
+	
+	public Course() {
+		
 	}
-
-	public Category(int id, String name, boolean active, Date createdDate, Date updatedDate) {
+	
+	public Course(int id, int instructorId, String name, String image,boolean active, Date createdDate, Date updatedDate) {
 		super();
 		this.id = id;
+		this.instructorId = instructorId;
 		this.name = name;
+		this.image=image;
 		this.active = active;
 		this.createdDate = createdDate;
 		this.updatedDate = updatedDate;
 	}
-
+	
 	public int getId() {
 		return id;
 	}
@@ -37,12 +42,28 @@ public class Category {
 		this.id = id;
 	}
 
+	public int getInstructorId() {
+		return instructorId;
+	}
+
+	public void setInstructorId(int instructorId) {
+		this.instructorId = instructorId;
+	}
+
 	public String getName() {
 		return name;
 	}
 
 	public void setName(String name) {
 		this.name = name;
+	}
+
+	public String getImage() {
+		return image;
+	}
+
+	public void setImage(String image) {
+		this.image = image;
 	}
 
 	public boolean isActive() {
@@ -68,5 +89,10 @@ public class Category {
 	public void setUpdatedDate(Date updatedDate) {
 		this.updatedDate = updatedDate;
 	}
-
+	
 }
+
+
+
+
+

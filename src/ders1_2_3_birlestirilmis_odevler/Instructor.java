@@ -4,7 +4,7 @@
  * Yazýlým Geliþtirici Yetiþtirme Kampý (JAVA + REACT)
  * 30 Nis 2021
  */
-package models;
+package ders1_2_3_birlestirilmis_odevler;
 
 public class Instructor extends User {
 
