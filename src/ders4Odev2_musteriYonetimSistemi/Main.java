@@ -4,7 +4,7 @@
  * Yazýlým Geliþtirici Yetiþtirme Kampý (JAVA + REACT)
  * 3 May 2021
  */
-package ders4Odev2;
+package ders4Odev2_musteriYonetimSistemi;
 
 public class Main {
 
