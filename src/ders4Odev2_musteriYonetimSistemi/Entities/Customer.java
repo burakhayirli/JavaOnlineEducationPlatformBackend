@@ -6,7 +6,6 @@
  */
 package ders4Odev2_musteriYonetimSistemi.Entities;
 
-import java.time.LocalDate;
 import java.util.Date;
 
 import ders4Odev2_musteriYonetimSistemi.Abstract.Entity;
