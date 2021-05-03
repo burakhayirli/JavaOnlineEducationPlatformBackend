@@ -11,4 +11,5 @@ import ders4Odev2_musteriYonetimSistemi.Entities.Customer;
 public interface CustomerService {
 
 	abstract void save(Customer customer);
+	
 }
