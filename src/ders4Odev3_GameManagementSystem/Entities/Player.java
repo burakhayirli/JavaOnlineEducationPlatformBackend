@@ -5,16 +5,18 @@
  * 3 May 2021
  */
 package ders4Odev3_GameManagementSystem.Entities;
+
 import ders4Odev3_GameManagementSystem.Abstract.Entity;
 
-public class Player  implements Entity{
+public class Player implements Entity {
 	private int id;
 	private String firstName;
 	private String lastName;
 	private int dateOfBirth;
 	private String nationalityId;
-	
-	public Player() {}
+
+	public Player() {
+	}
 
 	public Player(int id, String firstName, String lastName, int dateOfBirth, String nationalityId) {
 		super();
@@ -24,7 +26,7 @@ public class Player  implements Entity{
 		this.dateOfBirth = dateOfBirth;
 		this.nationalityId = nationalityId;
 	}
-	
+
 	@Override
 	public String toString() {
 		return "Player [firstName=" + firstName + ", lastName=" + lastName + ", dateOfBirth=" + dateOfBirth
@@ -70,6 +72,5 @@ public class Player  implements Entity{
 	public void setNationalityId(String nationalityId) {
 		this.nationalityId = nationalityId;
 	}
-	
-	
+
 }

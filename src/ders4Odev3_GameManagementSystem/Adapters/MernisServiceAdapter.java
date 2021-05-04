@@ -15,7 +15,10 @@ public class MernisServiceAdapter implements PlayerCheckService {
 	public boolean CheckIfRealPerson(Player player) {
 		// Gerçek service baðlan ve sorgulama yap. 
 		//Ancak þimdilik Algoritma ile T.C. Kimlik No kontrol edelim.
-		return isTCKNCorrect(player.getNationalityId());
+		//return isTCKNCorrect(player.getNationalityId());
+		
+		//Geçici olarak doðum yýlýna göre þart testi yapýyorum.
+		return player.getDateOfBirth()>=1980 && player.getDateOfBirth()<=1990 ? true :false; 
 	}
 
 	private boolean isTCKNCorrect(String id) {

@@ -22,7 +22,6 @@ public class PlayerManager implements PlayerService {
 	@Override
 	public void add(Player player) {
 		if (playerCheckService.CheckIfRealPerson(player)) {
-			add(player);
 			System.out.println("Yeni oyuncu eklendi : " + player.toString());
 		} else {
 			System.out.println("Kiþi bilgileri geçerli deðil. Yeni oyuncu eklenemedi");

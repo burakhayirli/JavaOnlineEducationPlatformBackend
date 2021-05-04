@@ -6,8 +6,8 @@
  */
 package ders4Odev3_GameManagementSystem.Abstract;
 
-import ders4Odev3_GameManagementSystem.Entities.Player;
+import ders4Odev3_GameManagementSystem.Entities.Campaign;
 
-public interface PlayerService extends BaseRepository<Player> {
+public interface CampaignService extends BaseRepository<Campaign> {
 
 }
