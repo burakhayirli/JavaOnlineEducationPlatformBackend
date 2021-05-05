@@ -6,8 +6,11 @@
  */
 package ders4Odev2_musteriYonetimSistemi.Adapters;
 
+import java.rmi.RemoteException;
+
 import ders4Odev2_musteriYonetimSistemi.Abstract.CustomerCheckService;
 import ders4Odev2_musteriYonetimSistemi.Entities.Customer;
+import tr.gov.nvi.tckimlik.WS.KPSPublicSoapProxy;
 
 public class MernisServiceAdapter implements CustomerCheckService {
 
@@ -15,9 +18,24 @@ public class MernisServiceAdapter implements CustomerCheckService {
 	public boolean CheckIfRealPerson(Customer customer) {
 		// Gerçek service baðlan ve sorgulama yap. 
 		//Ancak þimdilik Algoritma ile T.C. Kimlik No kontrol edelim.
-		return isTCKNCorrect(customer.getNationalityId());
+		//return isTCKNCorrect(customer.getNationalityId());
+		
+		KPSPublicSoapProxy client=new KPSPublicSoapProxy();
+		boolean isValidated=false;
+		try {
+			isValidated= client.TCKimlikNoDogrula(Long.parseLong(customer.getNationalityId()), customer.getFirstName(),customer.getLastName(), 1984);
+		} catch (NumberFormatException e) {
+			e.printStackTrace();
+		} catch (RemoteException e) {
+			e.printStackTrace();
+		}
+		
+		return isValidated;
+		
 	}
 
+	
+	
 	private boolean isTCKNCorrect(String id) {
 		if (id == null)
 			return false;
