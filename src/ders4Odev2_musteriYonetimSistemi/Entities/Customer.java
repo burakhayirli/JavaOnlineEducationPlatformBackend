@@ -6,7 +6,7 @@
  */
 package ders4Odev2_musteriYonetimSistemi.Entities;
 
-import java.util.Date;
+import java.time.LocalDate;
 
 import ders4Odev2_musteriYonetimSistemi.Abstract.Entity;
 
@@ -14,12 +14,12 @@ public class Customer  implements Entity{
 	private int id;
 	private String firstName;
 	private String lastName;
-	private Date dateOfBirth;
+	private LocalDate dateOfBirth;
 	private String nationalityId;
 	
 	public Customer() {}
 
-	public Customer(int id, String firstName, String lastName, Date dateOfBirth, String nationalityId) {
+	public Customer(int id, String firstName, String lastName, LocalDate dateOfBirth, String nationalityId) {
 		super();
 		this.id = id;
 		this.firstName = firstName;
@@ -58,11 +58,11 @@ public class Customer  implements Entity{
 		this.lastName = lastName;
 	}
 
-	public Date getDateOfBirth() {
+	public LocalDate getDateOfBirth() {
 		return dateOfBirth;
 	}
 
-	public void setDateOfBirth(Date dateOfBirth) {
+	public void setDateOfBirth(LocalDate dateOfBirth) {
 		this.dateOfBirth = dateOfBirth;
 	}
 

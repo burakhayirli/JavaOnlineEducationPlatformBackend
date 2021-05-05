@@ -7,6 +7,7 @@
 package ders4Odev2_musteriYonetimSistemi;
 
 import java.sql.Date;
+import java.time.LocalDate;
 
 import ders4Odev2_musteriYonetimSistemi.Abstract.BaseCustomerManager;
 import ders4Odev2_musteriYonetimSistemi.Adapters.MernisServiceAdapter;
@@ -21,9 +22,8 @@ public class Main {
 		Customer customer = new Customer();
 		customer.setFirstName("Burak");
 		customer.setLastName("HAYIRLI");
-		customer.setDateOfBirth(new Date(1984,1,1));
+		customer.setDateOfBirth(LocalDate.of(1984, 1, 1));
 		customer.setNationalityId("1234567890");
 		customerManager.save(customer);
 	}
-
 }  

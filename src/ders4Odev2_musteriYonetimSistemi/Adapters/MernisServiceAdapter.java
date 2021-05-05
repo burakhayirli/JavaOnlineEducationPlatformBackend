@@ -23,7 +23,8 @@ public class MernisServiceAdapter implements CustomerCheckService {
 		KPSPublicSoapProxy client=new KPSPublicSoapProxy();
 		boolean isValidated=false;
 		try {
-			isValidated= client.TCKimlikNoDogrula(Long.parseLong(customer.getNationalityId()), customer.getFirstName(),customer.getLastName(), 1984);
+			isValidated= client.TCKimlikNoDogrula(Long.parseLong(customer.getNationalityId()), 
+					customer.getFirstName(),customer.getLastName(), customer.getDateOfBirth().getYear());
 		} catch (NumberFormatException e) {
 			e.printStackTrace();
 		} catch (RemoteException e) {
